@@ -1,0 +1,248 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+nav {
+    background-color: #2a4369;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(38, 70, 83, 0.6), rgba(38, 70, 83, 0.6)),
+        url('https://images.pexels.com/photos/31173940/pexels-photo-31173940.jpeg') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Featured Destinations */
+.featured {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.card .desc {
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #2a9d8f;
+    color: white;
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Recent Posts */
+.recent-posts {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.post {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.post img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.post h3 {
+    padding: 10px;
+}
+
+.post p {
+    padding: 0 10px;
+}
+
+.post a {
+    display: block;
+    padding: 10px;
+    color: #ff6f61;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* Newsletter */
+.newsletter {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ff6f61;
+    color: white;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #264653;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #2a9d8f;
+}
+
+/* Footer */
+footer {
+    background-color: #264653;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    nav .logo {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .recent-posts {
+        grid-template-columns: 1fr;
+    }
+}
