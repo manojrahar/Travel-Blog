@@ -1,115 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Application</title>
-
-    <style>
-        body {
-            text-align: center;
-            margin: 0px;
-            background-color: lavender;
-        }
-
-        a:link {
-            color: white;
-        }
-
-        a:visited {
-            color: white;
-        }
-
-        #topbar {
-            background-color: rgb(12, 12, 76);
-            text-align: center;
-            padding: 16px;
-            word-spacing: 32px;
-            font-size: 17px;
-            font-weight: 600;
-        }
-
-        h2 {
-            color: black;
-        }
-
-        .image-wrapper {
-            display: inline;
-            margin: 5px;
-            padding: 16px 16px 0px 16px;
-            float: left;
-        }
-
-        .image-item {
-            width: 400px;
-            height: 290px;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-            padding: 0px;
-        }
-
-        .desc {
-            padding-top: 0px;
-            background-color: rgb(111, 158, 215);
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-            width: 100%;
-            font-size: 23px;
-        
-        }
-    </style>
+    <title>Wonders of Rajasthan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div id="topbar">
-        <a style="text-decoration: none;" href="https://www.makemytrip.com/holidays-india/">TRIPS</a>
-        <a style="text-decoration: none;" href="https://www.linkedin.com/in/manoj-rahar-a8b1b4251/">ABOUT</a>
-        <a style="text-decoration: none;" href="contact.html">CONTACT</a>
-        
-    </div>
-       
-    <div id="big-image">
-        <img style="width: 100%; height: auto;" src="https://img.freepik.com/premium-photo/panorama-famous-romantic-luxury-rajasthan-indian-tourist-landmark-udaipur-city-palace-sunset-with-cloudy-sky-surface-level-view-udaipur-rajasthan-india_163782-6964.jpg?w=2000" alt="Hawamahal">
-    </div>
 
-    <div>
-        <h2>My Travel Diary</h2>
-    </div>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Rajasthan</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://www.makemytrip.com/holidays-india/">Trips</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/manoj-rahar-a8b1b4251/">About</a></li>
+        </ul>
+    </nav>
 
-    <div style="margin-left: auto; margin-right: auto;">
-        <div class="image-wrapper">
-            <a target="_blank" style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Jodhpur"><img class="image-item" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/61/26/3c/caption.jpg?w=800&h=-1&s=1" alt="Jodhpur" /><div class="desc">Jodhpur</div></a>
-        </div>
-        
-        <div class="image-wrapper">
-            <a target="_blank" style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Udaipur"><img class="image-item" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Pgk_udaipur.jpg/1280px-Pgk_udaipur.jpg" alt="Udaipur" /><div class="desc">Udaipur</div></a>
-        </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Explore Rajasthan</h1>
+        <p>Discover the beauty, culture, and history of India’s royal state</p>
+    </section>
 
-        <div class="image-wrapper">
-            <a target="_blank" style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Jaipur"><img class="image-item" src="https://www.holidify.com/images/cmsuploads/compressed/h4_20170822181427.PNG" alt="Jaipur" /><div class="desc">Jaipur</div></a>
-        </div>
+    <!-- Featured Destinations -->
+    <section class="featured">
+        <h2>Top Tourist Attractions</h2>
+        <p>From forts to palaces, deserts to lakes — Rajasthan has it all</p>
+        <div class="destinations">
 
-        <div class="image-wrapper">
-            <a target="_blank"  style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Jaisalmer"><img class="image-item" src="https://travelindiatravel.in/wp-content/uploads/2022/10/shutterstock_1267308565_20190823104713.jpg" alt="Jaisalmer" /><div class="desc">Jaisalmer</div></a>
+            <!-- Attraction Cards -->
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Jaipur" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/JAIPUR.jpg">
+                    <div class="desc">Jaipur (Pink City)</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Udaipur" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/UDAIPUR.jpg">
+                    <div class="desc">Udaipur (City of Lakes)</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Jodhpur" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/JODHPUR.jpg">
+                    <div class="desc">Jodhpur (Blue City)</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Jaisalmer" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/JAISALMER.jpg">
+                    <div class="desc">Jaisalmer (Golden City)</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Mount_Abu" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/MOUNT-ABU.jpg">
+                    <div class="desc">Mount Abu</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Pushkar" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/PUSHKAR.jpg">
+                    <div class="desc">Pushkar</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Chittorgarh" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/CHITTORGARH.jpg">
+                    <div class="desc">Chittorgarh Fort</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Bikaner" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/BIKANER.jpg">
+                    <div class="desc">Bikaner</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Sikar" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/SIKAR.jpg">
+                    <div class="desc">Sikar</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Kota,_Rajasthan" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/KOTA.jpg">
+                    <div class="desc">Kota</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Alwar" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/ALWAR.jpg">
+                    <div class="desc">Alwar</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Sawai_Madhopur" target="_blank"><img
+                        src="https://www.indianholiday.com/wordpress/wp-content/uploads/2024/09/Sawai-Madhopur-Tourism-1.png">
+                    <div class="desc">Sawai Madhopur</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Bundi,_Rajasthan" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/BUNDI.jpg">
+                    <div class="desc">Bundi</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Ajmer" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/AJMER.jpg">
+                    <div class="desc">Ajmer</div>
+                </a></div>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Bharatpur,_Rajasthan" target="_blank"><img
+                        src="https://www.holidify.com/images/bgImages/BHARATPUR.jpg">
+                    <div class="desc">Bharatpur</div>
+                </a></div>
         </div>
+    </section>
 
-        <div class="image-wrapper">
-            <a target="_blank" style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Mount_Abu"><img class="image-item" src="https://curioustimes.in/wp-content/uploads/2020/04/Untitled-design-6.jpg" alt="Mount Abu" /><div class="desc">Mount Abu</div></a>
+    <!-- Recent Blog Posts -->
+    <section class="recent-posts">
+        <h2>Recent Blog Posts</h2>
+        <div class="posts-grid">
+            <div class="post"><img src="https://www.holidify.com/images/bgImages/JODHPUR.jpg">
+                <h3>Street Food in Jodhpur</h3>
+                <p>Exploring the spicy, sweet, and savory delights of the Blue City.</p><a href="#">Read More</a>
+            </div>
+            <div class="post"><img src="https://www.holidify.com/images/bgImages/JAIPUR.jpg">
+                <h3>Why Jaipur is Pink</h3>
+                <p>The royal tradition that gave Jaipur its famous pink hue.</p><a href="#">Read More</a>
+            </div>
+            <div class="post"><img src="https://www.holidify.com/images/bgImages/JAISALMER.jpg">
+                <h3>Desert Camping in Jaisalmer</h3>
+                <p>Experience starlit skies in the golden dunes.</p><a href="#">Read More</a>
+            </div>
+            <div class="post"><img src="https://www.holidify.com/images/bgImages/UDAIPUR.jpg">
+                <h3>Romance of Udaipur</h3>
+                <p>Why Udaipur is India’s most romantic city.</p><a href="#">Read More</a>
+            </div>
+            <div class="post"><img src="https://www.holidify.com/images/bgImages/CHITTORGARH.jpg">
+                <h3>Legends of Chittorgarh</h3>
+                <p>Stories of valor and sacrifice from the grand fort.</p><a href="#">Read More</a>
+            </div>
+            <div class="post"><img src="https://www.holidify.com/images/bgImages/MOUNT-ABU.jpg">
+                <h3>Peace in Mount Abu</h3>
+                <p>Discover Rajasthan’s cool hill station escape.</p><a href="#">Read More</a>
+            </div>
         </div>
+    </section>
 
-        <div class="image-wrapper">
-            <a target="_blank" style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Pushkar"><img class="image-item" src="https://www.revv.co.in/blogs/wp-content/uploads/2021/02/Pushkar.jpg" alt="Puskhar" /><div class="desc">Puskhar</div></a>
-        </div>
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <h2>Join the Rajasthan Travel Community</h2>
+        <p>Get exclusive tips and stories from my journeys</p>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
 
-        <div class="image-wrapper">
-            <a target="_blank" style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Chittorgarh"><img class="image-item" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/55/cb/65/caption.jpg?w=800&h=-1&s=1" alt="Chittorgarh" /><div class="desc">Chittorgarh</div></a>
-        </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Wonders of Rajasthan</p>
+        <p>Follow me on <a href="#">Instagram</a></p>
+    </footer>
 
-        <div class="image-wrapper">
-            <a target="_blank" style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Bikaner"><img class="image-item" src="https://www.japjitravel.com/blog/wp-content/uploads/2022/01/lalgarh-palace-bikaner.jpg" alt="Bikaner" /><div class="desc">Bikaner</div></a>
-        </div>
+</body>
 
-        <div class="image-wrapper">
-            <a target="_blank" style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Sikar"><img class="image-item" src="https://www.holidify.com/images/bgImages/SIKAR.jpg" alt="Sikar" /><div class="desc">Sikar</div></a>
-        </div>
-    </div>
+</html>
