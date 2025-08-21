@@ -193,6 +193,91 @@ nav ul li a:hover {
     background-color: #2a9d8f;
 }
 
+/* Contact Section */
+.contact-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-section p {
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #e67e22;
+  outline: none;
+  box-shadow: 0 0 6px rgba(230, 126, 34, 0.3);
+}
+
+.btn-submit {
+  background: #e67e22;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #cf711f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 20px;
+  }
+  .contact-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
 /* Footer */
 footer {
     background-color: #264653;
